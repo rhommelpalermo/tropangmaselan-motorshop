@@ -1,0 +1,335 @@
+/* === GLOBAL === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.AboutUs-body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #2a508d;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* === HEADER === */
+.AboutUs-main-header {
+  background-color: #ffffff;
+  color: #2a508c;
+  padding: 12px 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+}
+
+.AboutUs-header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.AboutUs-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.AboutUs-logo-icon {
+  height: 60px;
+  width: auto;
+}
+
+.AboutUs-logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2a508c;
+}
+
+.AboutUs-nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
+  margin-right: 75px;
+}
+
+.AboutUs-nav-list a {
+  text-decoration: none;
+  color: #2a508c;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.AboutUs-nav-list a:hover,
+.AboutUs-nav-list .AboutUs-active {
+  color: #3467a1;
+}
+
+
+.AboutUs-index-login-btn {
+  background-color: #2a508c;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* space between text and icon */
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+.AboutUs-index-login-btn:hover {
+  background-color: #3c6fb4;
+  transform: translateY(-2px);
+}
+
+.AboutUs-sign-in-icon {
+  width: 18px;
+  height: 19px;
+  stroke-width: 2.5;
+}
+
+.AboutUs-index-login-btn span {
+  position: relative;
+  top: -5px; /* move text slightly up */
+}
+
+/* === HERO === */
+.AboutUs-about-hero {
+  background-color: #ffffff;
+  text-align: center;
+
+  color: #2727f0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Downward curve effect */
+.AboutUs-about-hero {
+  position: relative;
+  background-color: #ffffff; /* top color */
+  text-align: center;
+  padding: 50px 20px 50px; /* bottom space for curve */
+  overflow: visible; /* let curve show outside */
+  z-index: 1;
+}
+
+/* The downward bowl curve */
+.AboutUs-about-hero::after {
+  content: "";
+  position: absolute;
+  bottom: 50px; /* how far the curve dips down */
+top: 150px;
+  left: 0;
+  width: 100%;
+  height: 100px; /* how tall the curve is */
+  background-color: #ffffff; /* next section color */
+  border-radius: 0 0 50% 50% / 50%;
+  z-index: -1; /* behind hero content */
+}
+
+/* Hero text above everything */
+.AboutUs-about-hero * {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+.AboutUs-about-hero h1 {
+  font-size: 1.5rem;
+  max-width: 650px;
+  margin: 0 auto 20px;
+}
+
+.AboutUs-btn-tutorial {
+  background-color: #033fe3;
+  color: #f3f5fa;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.AboutUs-btn-tutorial:hover {
+  background-color: #d9e1ef;
+}
+
+/* === STEP-BY-STEP SECTION === */
+.AboutUs-steps-section {
+  position: relative;
+  background-color: #2a508d;
+  padding: 150px 20px;
+  color: #fff;
+}
+
+.para {
+  text-align: center;
+  
+}
+
+/* vertical line in middle */
+.AboutUs-steps-section::before {
+  content: "";
+  position: absolute;
+  top:  222px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 85%;
+  background-color: #cfd8e3;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.AboutUs-steps-section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* Step container */
+.AboutUs-step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 50px auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Alternate layout */
+.AboutUs-step.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Text section */
+.AboutUs-step-text {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.AboutUs-step-text h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.AboutUs-step-text p {
+  font-size: 1rem;
+  color: #f3f3f3;
+  line-height: 1.6;
+}
+
+/* Image box */
+.AboutUs-step-img {
+  flex: 1;
+  background-color: #cfd8e3;
+  color: #333;
+  height: 180px;
+  margin: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* Circle indicator in the middle */
+.AboutUs-step::before {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 19px;
+  height: 19px;
+  background-color: #fff;
+  border: 4px solid #2a508c;
+  border-radius: 50%;
+  z-index: 2;
+
+}
+
+
+/* === FOOTER === */
+
+.AboutUs-about-footer {
+  background-color: #4b6d97;
+  text-align: center;
+  padding: 40px 20px;
+  color: #fff;
+  position: relative;
+}
+
+.AboutUs-about-footer p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.AboutUs-footer-bottom {
+  background-color: #2a508c;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.AboutUs-footer-bottom:hover {
+  background-color: #3c6fb4;
+  transform: translateY(-3px);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .AboutUs-steps-section::before {
+    left: 8px; /* move the line to the left on mobile */
+  }
+
+  .AboutUs-step {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .AboutUs-step.reverse {
+    flex-direction: column;
+  }
+
+  .AboutUs-step-img {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .AboutUs-step::before {
+    left: 8px;
+    transform: translateY(-50%);
+  }
+}
+
+

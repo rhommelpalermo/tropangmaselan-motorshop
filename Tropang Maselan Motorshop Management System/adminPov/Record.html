@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Record</title>
+  <link rel="stylesheet" href="Record.css" />
+   <link rel="icon" type="image/png"  href="Assets/tropangmaselanLogo.png" />
+</head>
+<body class="Log-In-Pov-body">
+  <!-- HEADER -->
+  <header class="Log-In-Pov-main-header">
+
+    <div class="Log-In-Pov-logo">
+        <img  class="Recors-sales-logo" src="Assets/tropangmaselanLogo.png" alt="Tropang Maselan">
+
+    </div>
+ 
+    <nav class="Log-In-Pov-navbar">
+      <a href="home.html">Home</a>
+      <a href="Record.html" class="Log-In-Pov-active">Record</a>
+      <a href="DashBoard.html">Dashboard</a>
+      <a href="ActivityLog.html">Activity Log</a>
+      <a href="StaffActivity.html">Staff Activity</a>
+    </nav>
+    <div class="Log-In-Pov-profile">
+      <button class="Log-In-Pov-logout-btn">Log Out</button>
+      <a href="profile.html" class="Log-In-Pov-user-icon"></a>
+    </div> 
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="Log-In-Pov-content">
+    <section class="Log-In-Pov-form-section">
+      <h2>Daily Record</h2>
+      <button class="Log-In-Pov-new-record">New Record</button>
+
+      <form class="Log-In-Pov-record-form">
+        <input type="text" placeholder="Products/Services/Motor Parts" />
+        <input type="number" placeholder="Quantity" />
+        <input type="number" placeholder="Price" />
+        <input type="date" />
+
+        <div class="Log-In-Pov-form-actions">
+          <button type="button" class="Log-In-Pov-enter-btn">Enter</button>
+          <button type="reset" class="Log-In-Pov-clear-btn">Clear</button>
+        </div>
+
+        <div class="Log-In-Pov-total-row">
+          <label>Total:</label>
+          <input type="text" readonly />
+        </div>
+
+        <div class="Log-In-Pov-save-actions">
+          <button type="button" class="Log-In-Pov-save-btn">Save</button>
+          <button type="button" class="Log-In-Pov-edit-btn">Edit</button>
+          <button type="button" class="Log-In-Pov-delete-btn">Delete</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="Log-In-Pov-list-section">
+      <h2>Recorded List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>DATE</th>
+            <th>ITEMS</th>
+            <th>QTY</th>
+            <th>PRICE</th>
+            <th>TOTAL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="5" class="Log-In-Pov-empty">No records yet</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="Log-In-Pov-footer">
+    <a href="#">About Us</a>
+  </footer>
+</body>
+</html>

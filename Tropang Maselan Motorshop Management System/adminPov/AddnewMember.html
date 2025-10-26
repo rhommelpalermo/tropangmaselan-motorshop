@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Staff Activity | Add a New Member</title>
+  <link rel="stylesheet" href="AddnewMember.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="Assets/tropangmaselanLogo.png" alt="Tropang Maselan Logo" />
+   
+    </div>
+
+    <nav class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="Record.html">Record</a>
+      <a href="DashBoard.html">Dashboard</a>
+      <a href="ActivityLog.html">Activity Log</a>
+      <a href="StaffActivity.html" class="active">Staff Activity</a>
+    </nav>
+
+    <div class="user-actions">
+      <button class="logout-btn">Log Out</button>
+      <div  class="user-icon"> <img src="Assets/profileLogo.png" alt="logo"></div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-container">
+    <section class="form-section">
+      <h2>Add a New Member</h2>
+      <p class="form-subtext">
+        Fill out the form below to create a new team member account.
+      </p>
+      <hr />
+
+      <form class="add-member-form">
+        <div class="input-group">
+          <label>First Name</label>
+          <input type="text" placeholder="Enter first name" required />
+        </div>
+
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" placeholder="Enter email" required />
+        </div>
+
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" placeholder="Enter password" required />
+        </div>
+
+        <div class="input-group">
+          <label>Confirm Password</label>
+          <input type="password" placeholder="Re-enter password" required />
+        </div>
+
+        <div class="roles">
+          <p>Role(s)</p>
+          <label><input type="checkbox" /> Administrator</label>
+          <label><input type="checkbox" /> Staff</label>
+        </div>
+
+        <div class="members-boxes">
+          <div class="box">
+            <label>Available Members</label>
+            <select multiple></select>
+          </div>
+
+          <div class="member-controls">
+            <button type="button">&lt;&lt; Remove All</button>
+            <button type="button">&lt; Remove</button>
+            <button type="button">Add Item &gt;</button>
+            <button type="button">Add &gt;&gt;</button>
+          </div>
+
+          <div class="box">
+            <label>Included Members</label>
+            <select multiple></select>
+          </div>
+        </div>
+
+        <button type="submit" class="add-btn"> Add New Member</button>
+          <a class="add-btn" href="StaffActivity.html">back</a>
+      </form>
+        
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="#">About Us</a>
+  </footer>
+</body>
+</html>

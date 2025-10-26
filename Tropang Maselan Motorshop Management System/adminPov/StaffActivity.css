@@ -1,0 +1,342 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #4a709a;
+}
+
+/* HEADER */
+.main-header {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.staff-activity-logo-icon {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 3px;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: #2a3b7a;
+}
+
+nav a.active {
+  font-weight: 700;
+  border-bottom: 2px solid #234;
+}
+
+/* HEADER ACTIONS */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logout-btn {
+  background-color: #406aaf;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.profile-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-image: url("Assets/profileLogo.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.05);
+}
+
+/* MAIN CONTAINER */
+.main-container {
+  display: flex;
+  padding: 20px;
+  background-color: #4a709a;
+  min-height: 85vh;
+  gap: 20px;
+}
+
+/* ACTIVITY SECTION */
+.activity-container {
+  flex: 3;
+  background-color: #eaf1f5;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.tab {
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+.tab.active {
+  color: #2a3b7a;
+  border-bottom: 2px solid #2a3b7a;
+  text-decoration: none;
+  font-weight: 700
+}
+
+/* ACTIVITY LIST */
+.staff-activity h3 {
+  margin-top: 20px;
+  color: #243a57;
+}
+
+.staff-activity h3 span {
+  color: #2a3b7a;
+}
+
+.activity-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.activity-card {
+  display: flex;
+  align-items: center;
+  background: #f4f9fb;
+  border-radius: 6px;
+  padding: 10px 15px;
+  border-bottom: 2px solid #ccc;
+}
+
+.activity-card .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.activity-card.green .avatar { background-color: #4cb191; }
+.activity-card.teal .avatar { background-color: #6ec6c8; }
+.activity-card.red .avatar { background-color: #e97070; }
+.activity-card.yellow .avatar { background-color: #d9b86c; }
+.activity-card.gray .avatar { background-color: #8d8d8d; }
+
+.info p {
+  margin: 2px 0;
+}
+.info .name {
+  font-weight: 600;
+}
+.info .action {
+  font-size: 0.9rem;
+  color: #333;
+}
+.info .status {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* SIDEBAR */
+.sidebar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 50px;
+}
+
+.add-account-btn {
+  background-color: #2a508c;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-decoration: none; /* removes underline */
+  display: inline-block; /* ensures button shape */
+  text-align: center; /* centers the text */
+  border-bottom: none;
+}
+
+
+/* FOOTER */
+.footer {
+  background-color: #2e3f58;
+  text-align: right;
+  padding: 10px 20px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+/* TABLETS */
+@media (max-width: 992px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
+
+  .add-account-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  .staff-activity-logo-icon {
+    width: 100px;
+  }
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+  .main-header {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+
+  nav {
+    display: none; /* hide default nav */
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+
+  nav a {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 1.6rem;
+  }
+
+  .show-menu nav {
+    display: flex;
+  }
+
+  .header-actions {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .staff-activity-logo-icon {
+    width: 90px;
+  }
+
+  .main-container {
+    padding: 10px;
+  }
+
+  .activity-container {
+    padding: 15px;
+  }
+
+  .activity-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .avatar {
+    margin-bottom: 8px;
+  }
+
+  .sidebar {
+    align-items: center;
+  }
+
+  .add-account-btn {
+    width: 80%;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .logout-btn {
+    padding: 6px 15px;
+    font-size: 0.85rem;
+  }
+
+  .staff-activity-logo-icon {
+    width: 80px;
+  }
+
+  .activity-card {
+    padding: 8px 10px;
+  }
+
+  .info .name {
+    font-size: 0.9rem;
+  }
+
+  .info .action,
+  .info .status {
+    font-size: 0.8rem;
+  }
+}

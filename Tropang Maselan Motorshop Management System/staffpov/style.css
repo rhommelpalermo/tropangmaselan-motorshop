@@ -1,0 +1,1433 @@
+/* === for index.html === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif, Arial, Helvetica, ;
+  background-color: #2a508c;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* === HEADER === */
+.main-header {
+  background-color: #ffffff;
+  color: #2a508c;
+  padding: 12px 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    position: relative;
+}
+
+/* === LOGO === */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  height: 60px;
+  width: auto;
+  margin-left: -20px;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2a508c;
+}
+
+/* === NAVIGATION === */
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 24px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #2a508c;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #3467a1;
+}
+
+/* === SIGN-IN BUTTON === */
+.index-login-btn {
+  background-color: #2a508c;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-right: -25px;
+
+}
+
+.index-login-btn:hover {
+  background-color: #789ace;
+}
+
+.sign-in-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
+/* === RESPONSIVE HEADER === */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+/* PROFILE ICON */
+.profile-icon { 
+  width: 16px;
+   height: 16px;
+
+  
+   } 
+.profile-icon{ 
+  width: 50px; 
+  height: 50px; 
+  background-image: url("Assets/profileLogo.png"); 
+  background-size: cover; 
+  background-position: center; 
+  cursor: pointer; 
+  border: 2px solid #ffffff; 
+  transition: transform 0.2s ease; 
+background-color: #ffffff;
+}
+
+.login-btn {
+  background-color: #2a508c;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-right: -250px;
+  
+
+}
+
+.login-btn:hover {
+  background-color: #789ace;
+}
+
+.sign-in-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
+
+/* === WELCOME SECTION === */
+.welcome-section {
+  background-color: #ffffff;
+  color: #010101;
+  text-align: center;
+  position: relative;
+  padding: 60px 20px 0px 20px;
+}
+
+.welcome-content {
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+}
+
+.welcome-section h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.welcome-section p {
+  font-size: 16px;
+  margin-bottom: 28px;
+}
+
+.btn-tutorial {
+  background-color: #2a508c;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 36px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-tutorial:hover {
+  background-color: #3467a1;
+}
+
+
+
+
+/* === HOME SECTION === */
+.home-section {
+  max-width: 1100px;
+  margin: 0 auto 60px auto;
+  padding: 0 24px;
+  color: #fff;
+}
+
+
+
+.custom-shape-divider-top-1759716716 {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+  z-index: 900px;
+}
+
+.custom-shape-divider-top-1759716716 svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 200px; /* Adjust curve height */
+top: -60px;
+padding: -100px;
+}
+
+.custom-shape-divider-top-1759716716 .shape-fill {
+fill: #ffffff;
+
+}
+.home-section h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+  margin-top: 0px;
+}
+
+.home-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* Left */
+.home-left {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-mail {
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.mail-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.home-left p {
+  margin-bottom: 20px;
+}
+
+.placeholder-box {
+  width: 270px;
+  height: 140px;
+  background-color: #7b9ac0;
+  border-radius: 8px;
+  margin: 0 auto 20px auto;
+}
+
+.important-text {
+  text-align: center;
+  max-width: 320px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+/* Middle separator */
+.vertical-line {
+  width: 2px;
+  background: #b6c3d6;
+  border-radius: 2px;
+}
+
+/* Right */
+.home-right {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.dashboard-image {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 6px;
+  margin-bottom: 14px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+}
+
+.placeholder-box.small {
+  width: 150px;
+  height: 150px;
+  background-color: #7b9ac0;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+/* Footer note */
+.footer-note {
+  font-size: 14px;
+  color: #c9d1df;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #223049;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+.about-us-link {
+  color: #7b9ac0;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.about-us-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+/* === RESPONSIVE === */
+@media (max-width: 850px) {
+  .home-content {
+    flex-direction: column;
+  }
+  .vertical-line {
+    display: none;
+  }
+}
+
+
+
+
+
+/* === for sign in.html === */
+.signup-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+ background-image: url('Assets/garage.avif');
+    background-size: 1100px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: Right; 
+  background-color: rgb(42, 68, 106);
+}
+
+
+.signup-paragraph{
+  position: absolute;
+  top: 120px;
+  right: 150px;
+  width: 520px;
+  
+}
+.signup-h2
+{
+  text-align: center;
+  color: hsl(209, 100%, 91%);
+  margin-top: 20px;
+  text-align: center;
+  font-size: 36px;
+}
+
+
+
+
+.signup-h3{
+  text-align: justify;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 1000px;
+background: linear-gradient(120deg, #e2f5ff, #aed3ed, #DDE6E8, #e7dfe7, #aed8ff);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.signup-wrapper{
+  position: absolute;
+  top: 122px;
+  left: 150px;
+bottom: 70px;
+
+
+  width: 520px;
+
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(25px);
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+}
+.signup-wrapper h1{
+  font-size: 36px;
+  text-align: center;
+}
+.signup-wrapper .signup-input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  
+  margin: 30px 0;
+}
+.signup-input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+.signup-input-box input::placeholder{
+  color: #fff;
+}
+.signup-input-box i{
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translate(-50%);
+  font-size: 20px;
+
+}
+.signup-wrapper .signup-remember-forgot{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+.signup-remember-forgot label input{
+  accent-color: #fff;
+  margin-right: 3px;
+
+}
+.signup-remember-forgot a{
+  color: #fff;
+  text-decoration: none;
+
+}
+.signup-remember-forgot a:hover{
+  text-decoration: underline;
+}
+.signup-wrapper .btn{
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+.signup-wrapper .signup-register-link{
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+
+}
+.signup-register-link p a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.signup-register-link p a:hover{
+  text-decoration: underline;
+}
+
+.signup-btn {
+  appearance: none;
+  background-color: #2168e4;
+  border: 2px solid #2168e4;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.signup-btn:disabled {
+  pointer-events: none;
+}
+
+.signup-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.signup-btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+
+/* === for Recordsales.html  === */
+.Log-In-Pov-body {
+  background-color: #4c6a8c;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* === HEADER === */
+.Log-In-Pov-main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+
+}
+.Recors-sales-logo{
+height: 45px;
+
+
+
+}
+.Log-In-Pov-logo {
+  background: #ffffff;
+  color: #2a508c;
+  padding: 3px 5px;
+  font-weight: bold;
+  border-radius: 6px;
+  
+}
+
+
+.Log-In-Pov-navbar a {
+  color: #000000;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.Log-In-Pov-navbar a:hover {
+  color: #6d96d3;
+}
+
+.Log-In-Pov-navbar a.Log-In-Pov-active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.Log-In-Pov-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Log-In-Pov-logout-btn {
+  background: #072b7d;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+
+}
+
+.Log-In-Pov-logout-btn:hover {
+  background: #4869a1;
+}
+
+.Log-In-Pov-user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url("Assets/profileLogo.png");
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.Log-In-Pov-user-icon:hover {
+  transform: scale(1.05);
+}
+
+/* === MAIN CONTENT === */
+.Log-In-Pov-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* === FORM SECTION === */
+.Log-In-Pov-form-section {
+  background-color: rgba(0, 0, 0, 0.2);
+  flex: 1 1 300px;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 320px;
+}
+
+.Log-In-Pov-form-section h2 {
+  margin-bottom: 10px;
+}
+
+.Log-In-Pov-new-record {
+  background: #12356d;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.Log-In-Pov-record-form input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.Log-In-Pov-form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.Log-In-Pov-enter-btn,
+.Log-In-Pov-clear-btn {
+  background: #12356d;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 6px 15px;
+  cursor: pointer;
+}
+
+.Log-In-Pov-total-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.Log-In-Pov-total-row input {
+  width: 100px;
+  text-align: center;
+}
+
+.Log-In-Pov-save-actions button {
+  display: block;
+  width: 100%;
+  background: #12356d;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+/* === TABLE SECTION === */
+.Log-In-Pov-list-section {
+  background-color: rgba(0, 0, 0, 0.2);
+  flex: 2 1 500px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.Log-In-Pov-list-section h2 {
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #58769b;
+}
+
+th, td {
+  border: 1px solid #2a508c;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background: #324e7b;
+  color: #fff;
+}
+
+.Log-In-Pov-empty {
+  text-align: center;
+  color: #dcdcdc;
+}
+
+/* === FOOTER === */
+.Log-In-Pov-footer {
+  margin-top: auto;
+  background: #2a2f38;
+  color: #fff;
+  text-align: right;
+  padding: 10px 20px;
+}
+
+.Log-In-Pov-footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/*  RESPONSIVE */
+@media (max-width: 768px) {
+  .Log-In-Pov-content {
+    flex-direction: column;
+  }
+
+  .Log-In-Pov-list-section h2 {
+    text-align: left;
+  }
+
+  table, th, td {
+    font-size: 14px;
+  }
+}
+
+
+/* === ACTIVITY LOG === */
+.RecordSale-body {
+  background-color: #587a9e;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ===== HEADER ===== */
+.RecordSale-main-header {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; /* 🔧 fixed invalid "100px" value */
+  box-sizing: border-box;
+}
+
+.RecordSale-logo img {
+  height: 40px;
+}
+
+/* NAVIGATION */
+.RecordSale-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.RecordSale-nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.RecordSale-nav-links a:hover {
+  color: #2a508c;
+}
+
+.RecordSale-nav-links a.RecordSale-active {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* HEADER ACTIONS (LOGOUT + PROFILE) */
+.RecordSale-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.RecordSale-logout-btn {
+  background-color: #302e72;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.RecordSale-logout-btn:hover {
+  background-color: #588aae;
+}
+
+.RecordSale-profileLogo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.RecordSale-profileLogo:hover {
+  transform: scale(1.05);
+}
+
+/* ===== MAIN CONTENT ===== */
+.RecordSale-content {
+  flex: 1;
+  padding: 110px 50px 30px; /* 🔧 added top padding to avoid content hiding under fixed header */
+  box-sizing: border-box;
+}
+
+.RecordSale-sales-section {
+  background-color: #587a9e;
+}
+
+.RecordSale-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.RecordSale-section-header i {
+  font-size: 24px;
+  color: #fff;
+}
+
+.RecordSale-sales-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Sale item rows */
+.RecordSale-sale-item {
+  background-color: #496b8c;
+  border-radius: 25px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  font-weight: 600;
+}
+
+/* Right side (total + buttons) */
+.RecordSale-right-side {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Action buttons group */
+.RecordSale-actions-group {
+  display: flex;
+  align-items: center;
+  background-color: #3e8f86;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.RecordSale-actions-group button {
+  border: none;
+  background: transparent;
+  color: white;
+  padding: 8px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.RecordSale-actions-group button:hover {
+  background-color: #35776f;
+}
+
+.RecordSale-actions-group i {
+  margin-left: 5px;
+}
+
+/* ===== FOOTER ===== */
+.RecordSale-footer {
+  background-color: #2c3e50;
+  padding: 20px 70px;
+  text-align: right;
+}
+
+.RecordSale-footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.RecordSale-footer a:hover {
+  color: #7a9eb8;
+}
+
+
+
+/* === DASHBOARD css === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body.Dashboard-body {
+  background-color: #587a9e;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* === HEADER === */
+.Dashboard-header {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Dashboard-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.Dashboard-logo img {
+  width: 80px;
+  height: 50px;
+}
+
+.Dashboard-logo span {
+  font-weight: 700;
+  color: #2a508c;
+}
+
+.Dashboard-nav a {
+  margin: 0 12px;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.Dashboard-nav a.active {
+  font-weight: 700;
+  border-bottom: 2px solid #2a508c;
+}
+
+.Dashboard-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logout-btn {
+  background-color: #18385c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.logout-btn:hover {
+  background-color: #688dbb;
+}
+
+.profile-icon i {
+  font-size: 22px;
+  color: #2a508c;
+}
+
+/* === MAIN CONTENT === */
+.Dashboard-main {
+  flex: 1;
+  background-color: #587a9e;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Dashboard-box {
+  width: 90%;
+  height: 450px;
+  background-color: #6c8cad;
+  border: 3px solid #2996ff;
+  position: relative;
+  border-radius: 4px;
+}
+
+.Dashboard-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 22px;
+  color: black;
+}
+
+.print-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #345775;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.print-btn:hover {
+  background-color: #26435c;
+}
+
+/*  FOOTER */
+.Dashboard-footer {
+  background-color: #1a324a;
+  text-align: right;
+  padding: 12px 30px;
+}
+
+.Dashboard-footer a {
+  color: white;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+
+
+
+/* ===About us section===*/
+.AboutUs-body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #2a508d;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* === HEADER === */
+.AboutUs-main-header {
+  background-color: #ffffff;
+  color: #2a508c;
+  padding: 12px 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+}
+
+.AboutUs-header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.AboutUs-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.AboutUs-logo-icon {
+  height: 60px;
+  width: auto;
+}
+
+.AboutUs-logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2a508c;
+}
+
+.AboutUs-nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
+  margin-right: 50px;
+}
+
+.AboutUs-nav-list a {
+  text-decoration: none;
+  color: #2a508c;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.AboutUs-nav-list a:hover,
+.AboutUs-nav-list .AboutUs-active {
+  color: #3467a1;
+}
+
+
+.AboutUs-index-login-btn {
+  background-color: #2a508c;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* space between text and icon */
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+.AboutUs-index-login-btn:hover {
+  background-color: #3c6fb4;
+  transform: translateY(-2px);
+}
+
+.AboutUs-sign-in-icon {
+  width: 18px;
+  height: 19px;
+  stroke-width: 2.5;
+}
+
+.AboutUs-index-login-btn span {
+  position: relative;
+  top: -5px; /* move text slightly up */
+}
+
+/* === HERO === */
+.AboutUs-about-hero {
+  background-color: #ffffff;
+  text-align: center;
+
+  color: #2727f0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Downward curve effect */
+.AboutUs-about-hero {
+  position: relative;
+  background-color: #ffffff; /* top color */
+  text-align: center;
+  padding: 50px 20px 50px; /* bottom space for curve */
+  overflow: visible; /* let curve show outside */
+  z-index: 1;
+}
+
+/* The downward bowl curve */
+.AboutUs-about-hero::after {
+  content: "";
+  position: absolute;
+  bottom: 100px; /* how far the curve dips down */
+top: 70px;
+  left: 0px;
+  width: 100%;
+  height: 300px; /* how tall the curve is */
+  background-color: #ffffff; /* next section color */
+  border-radius: 0 0 50% 50% / 50%;
+  z-index: -1; /* behind hero content */
+}
+
+/* Hero text above everything */
+.AboutUs-about-hero * {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+.AboutUs-about-hero h1 {
+  font-size: 1.5rem;
+  max-width: 650px;
+  margin: 0 auto 20px;
+}
+
+.AboutUs-btn-tutorial {
+  background-color: #143592;
+  color: #f3f5fa;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.AboutUs-btn-tutorial:hover {
+  background-color: #d9e1ef;
+}
+
+/* === STEP-BY-STEP SECTION === */
+.AboutUs-steps-section {
+  position: relative;
+  background-color: #2a508d;
+  padding: 150px 20px;
+  color: #fff;
+}
+
+.para {
+  text-align: center;
+  
+}
+
+/* vertical line in middle */
+.AboutUs-steps-section::before {
+  content: "";
+  position: absolute;
+  top:  222px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 85%;
+  background-color: #cfd8e3;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.AboutUs-steps-section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* Step container */
+.AboutUs-step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 50px auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Alternate layout */
+.AboutUs-step.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Text section */
+.AboutUs-step-text {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.AboutUs-step-text h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.AboutUs-step-text p {
+  font-size: 1rem;
+  color: #f3f3f3;
+  line-height: 1.6;
+}
+
+/* Image box */
+.AboutUs-step-img {
+  flex: 1;
+  background-color: #cfd8e3;
+  color: #333;
+  height: 180px;
+  margin: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* Circle indicator in the middle */
+.AboutUs-step::before {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 19px;
+  height: 19px;
+  background-color: #fff;
+  border: 4px solid #2a508c;
+  border-radius: 50%;
+  z-index: 2;
+
+}
+
+
+/* === FOOTER === */
+
+.AboutUs-about-footer {
+  background-color: #4b6d97;
+  text-align: center;
+  padding: 40px 20px;
+  color: #fff;
+  position: relative;
+}
+
+.AboutUs-about-footer p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.AboutUs-footer-bottom {
+  background-color: #2a508c;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.AboutUs-footer-bottom:hover {
+  background-color: #3c6fb4;
+  transform: translateY(-3px);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .AboutUs-steps-section::before {
+    left: 8px; /* move the line to the left on mobile */
+  }
+
+  .AboutUs-step {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .AboutUs-step.reverse {
+    flex-direction: column;
+  }
+
+  .AboutUs-step-img {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .AboutUs-step::before {
+    left: 8px;
+    transform: translateY(-50%);
+  }
+}
+
+

@@ -1,0 +1,137 @@
+
+
+/* === DASHBOARD css === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body.Dashboard-body {
+  background-color: #587a9e;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* === HEADER === */
+.Dashboard-header {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Dashboard-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.Dashboard-logo img {
+  width: 80px;
+  height: 50px;
+}
+
+.Dashboard-logo span {
+  font-weight: 700;
+  color: #2a508c;
+}
+
+.Dashboard-nav a {
+  margin: 0 12px;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.Dashboard-nav a.active {
+  font-weight: 700;
+  border-bottom: 2px solid #2a508c;
+}
+
+.Dashboard-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logout-btn {
+  background-color: #18385c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.logout-btn:hover {
+  background-color: #688dbb;
+}
+
+.profile-icon i {
+  font-size: 22px;
+  color: #2a508c;
+}
+
+/* === MAIN CONTENT === */
+.Dashboard-main {
+  flex: 1;
+  background-color: #587a9e;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Dashboard-box {
+  width: 90%;
+  height: 450px;
+  background-color: #6c8cad;
+  border: 3px solid #2996ff;
+  position: relative;
+  border-radius: 4px;
+}
+
+.Dashboard-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 22px;
+  color: black;
+}
+
+.print-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #345775;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.print-btn:hover {
+  background-color: #26435c;
+}
+
+/*  FOOTER */
+.Dashboard-footer {
+  background-color: #1a324a;
+  text-align: right;
+  padding: 12px 30px;
+}
+
+.Dashboard-footer a {
+  color: white;
+  font-weight: 600;
+  text-decoration: underline;
+}
+

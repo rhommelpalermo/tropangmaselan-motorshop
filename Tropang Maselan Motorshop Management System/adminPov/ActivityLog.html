@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity Log | Tropang Maselan</title>
+  <link rel="stylesheet" href="ActivityLog.css">
+   <link rel="icon" type="image/png"  href="Assets/tropangmaselanLogo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2b5e6f072.js" crossorigin="anonymous"></script>
+</head>
+<body class="RecordSale-body">
+  <!-- HEADER -->
+  <header class="RecordSale-main-header">
+    <div class="RecordSale-logo">
+      <img src="Assets/tropangmaselanLogo.png" alt="Tropang Maselan">
+    </div>
+    <nav>
+      <ul class="RecordSale-nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Record.html">Record</a></li>
+        <li><a href="DashBoard.html">Dashboard</a></li>
+        <li><a href="ActivityLog.html" class="RecordSale-active">Activity Log</a></li>
+        <li><a href="StaffActivity.html">Staff Activity</a></li>
+        
+    
+    </ul>
+    </nav>
+    <div class="RecordSale-header-actions">
+      <button class="RecordSale-logout-btn">Log Out</button>
+  <a href="profile.html"> <img class="RecordSale-profileLogo" src="Assets/profileLogo.png" alt="Tropang Maselan"></a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="RecordSale-content">
+    <section class="RecordSale-sales-section">
+      <div class="RecordSale-section-header">
+        <h2>Recorded Sales</h2>
+        <i class="RecordSale-fa-solid fa-calendar-days"></i>
+      </div>
+
+      <div class="RecordSale-sales-list">
+        <!-- Regular Rows -->
+        <div class="RecordSale-sale-item"><span>Date</span><span>TOTAL</span></div>
+        <div class="RecordSale-sale-item"><span>Date</span><span>TOTAL</span></div>
+        <div class="RecordSale-sale-item"><span>Date</span><span>TOTAL</span></div>
+
+        <!-- Row with Edit/Cancel/Delete -->
+        <div class="RecordSale-sale-item action-row">
+  <span class="RecordSale-label">Date</span>
+  <div class="RecordSale-right-side">
+    <span class="RecordSale-value">TOTAL</span>
+    <div class="RecordSale-actions-group">
+      <button class="RecordSale-edit">Edit</button>
+      <button class="RecordSale-cancel">Cancel</button>
+      <button class="RecordSale-delete">🗑️<i class="RecordSale-fa-solid fa-trash"></i></button>
+    </div>
+  </div>
+</div>
+
+
+        <!-- More rows -->
+        <div class="RecordSale-sale-item"><span>Date</span><span>TOTAL</span></div>
+        <div class="RecordSale-sale-item"><span>Date</span><span>TOTAL</span></div>
+        <div class="RecordSale-sale-item"><span>Date</span><span>TOTAL</span></div>
+        <div class="RecordSale-sale-item"><span>Date</span><span>TOTAL</span></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="RecordSale-footer">
+    <a class="RecordSale-a" href="#">About Us</a>
+  </footer>
+</body>
+</html>

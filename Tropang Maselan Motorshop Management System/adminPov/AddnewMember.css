@@ -1,0 +1,297 @@
+/* GENERAL STYLES */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #4a709a;
+  color: #222;
+}
+/* HEADER */
+.main-header {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+/* LOGO */
+.logo img {
+  width: 130px;   /* ✅ adjust the logo size */
+  height: auto;
+  object-fit: contain;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4a709a;
+}
+
+.nav-links a.active {
+  font-weight: 700;
+  border-bottom: 2px solid #4a709a;
+  padding-bottom: 2px;
+}
+
+/* USER ACTIONS (RIGHT SIDE) */
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* LOGOUT BUTTON */
+.logout-btn {
+  background-color: #4a709a;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #3e5f86;
+}
+
+/* PROFILE ICON */
+.user-icon img {
+  width: 40px;       /* ✅ fix profile icon size */
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;  /* makes it circular */
+
+  background-color: #f2f2f2;
+}
+
+/* Make header responsive */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 110px;
+  }
+
+  .user-icon img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* MAIN CONTENT */
+.main-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.form-section {
+  background-color: #5e80aa;
+  width: 90%;
+  max-width: 850px;
+  padding: 40px;
+  border: 1px solid #3a5c86;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+.form-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.form-subtext {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 25px;
+}
+
+/* INPUTS */
+.add-member-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #f8f9fa;
+  color: #333;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  background: #fff;
+  box-shadow: 0 0 0 2px #4a709a;
+}
+
+/* ROLES */
+.roles {
+  margin-top: 10px;
+}
+
+.roles p {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.roles label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* MEMBERS AREA */
+.members-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.box {
+  flex: 1;
+  min-width: 180px;
+}
+
+.box label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+select {
+  width: 100%;
+  height: 100px;
+  border-radius: 8px;
+  border: none;
+  background: #f8f9fa;
+  color: #333;
+  padding: 5px;
+}
+
+.member-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.member-controls button {
+  padding: 6px;
+  font-size: 13px;
+  border: none;
+  border-radius: 6px;
+  background: #4a709a;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.member-controls button:hover {
+  background: #3d5f84;
+}
+
+/* ADD BUTTON */
+.add-btn {
+  background-color: #0a3ee8;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  width: fit-content;
+  margin-top: 25px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: 0.3s;
+  
+}
+
+.add-btn:hover {
+  background-color: #a6d3fd;
+}
+.a {
+border-bottom: none;
+}
+/* FOOTER */
+footer {
+  background-color: #33475b;
+  padding: 15px;
+  text-align: right;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .members-boxes {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .form-section {
+    padding: 25px;
+  }
+
+  .input-group input {
+    font-size: 0.9rem;
+  }
+}

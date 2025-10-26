@@ -1,0 +1,243 @@
+/* === for Recordsales.html  === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.Log-In-Pov-body {
+  background-color: #4c6a8c;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* === HEADER === */
+.Log-In-Pov-main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+
+}
+.Recors-sales-logo{
+height: 45px;
+
+
+
+}
+.Log-In-Pov-logo {
+  background: #ffffff;
+  color: #2a508c;
+  padding: 3px 5px;
+  font-weight: bold;
+  border-radius: 6px;
+  
+}
+
+
+.Log-In-Pov-navbar a {
+  color: #000000;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.Log-In-Pov-navbar a:hover {
+  color: #6d96d3;
+}
+
+.Log-In-Pov-navbar a.Log-In-Pov-active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.Log-In-Pov-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Log-In-Pov-logout-btn {
+  background: #072b7d;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+
+}
+
+.Log-In-Pov-logout-btn:hover {
+  background: #4869a1;
+}
+
+.Log-In-Pov-user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url("Assets/profileLogo.png");
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.Log-In-Pov-user-icon:hover {
+  transform: scale(1.05);
+}
+
+/* === MAIN CONTENT === */
+.Log-In-Pov-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* === FORM SECTION === */
+.Log-In-Pov-form-section {
+  background-color: rgba(0, 0, 0, 0.2);
+  flex: 1 1 300px;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 320px;
+}
+
+.Log-In-Pov-form-section h2 {
+  margin-bottom: 10px;
+}
+
+.Log-In-Pov-new-record {
+  background: #12356d;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.Log-In-Pov-record-form input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.Log-In-Pov-form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.Log-In-Pov-enter-btn,
+.Log-In-Pov-clear-btn {
+  background: #12356d;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 6px 15px;
+  cursor: pointer;
+}
+
+.Log-In-Pov-total-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.Log-In-Pov-total-row input {
+  width: 100px;
+  text-align: center;
+}
+
+.Log-In-Pov-save-actions button {
+  display: block;
+  width: 100%;
+  background: #12356d;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+/* === TABLE SECTION === */
+.Log-In-Pov-list-section {
+  background-color: rgba(0, 0, 0, 0.2);
+  flex: 2 1 500px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.Log-In-Pov-list-section h2 {
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #58769b;
+}
+
+th, td {
+  border: 1px solid #2a508c;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background: #324e7b;
+  color: #fff;
+}
+
+.Log-In-Pov-empty {
+  text-align: center;
+  color: #dcdcdc;
+}
+
+/* === FOOTER === */
+.Log-In-Pov-footer {
+  margin-top: auto;
+  background: #2a2f38;
+  color: #fff;
+  text-align: right;
+  padding: 10px 20px;
+}
+
+.Log-In-Pov-footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/*  RESPONSIVE */
+@media (max-width: 768px) {
+  .Log-In-Pov-content {
+    flex-direction: column;
+  }
+
+  .Log-In-Pov-list-section h2 {
+    text-align: left;
+  }
+
+  table, th, td {
+    font-size: 14px;
+  }
+}
+
